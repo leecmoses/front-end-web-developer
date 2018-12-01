@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes for Front-End Web Developer Nanodegree Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto:300,400,500," rel="stylesheet">
+</head>
+
+<body>
+    <h1><span>&lt/&gt</span> Front-End Web Developer Nanodegree Program</h1>
+    <div class="table">
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#welcome">Welcome to the Program!</a></li>
+            <li><a href="#building">The Building Blocks of Front-End Development</li>
+            <li><a href="#javascript">JavaScript & The DOM</a></li>
+            <li><a href="#web">Web Accessibility</a></li>
+            <li><a href="#object">Object-Oriented JavaScript</a></li>
+            <li><a href="#tools">JavaScript Tools & Testing</a></li>
+            <li><a href="#apps">Front-End Applications</a></li>
+            <li><a href="#congrats">Congratulations! What's Next?</a></li>
+        </ol>
+    </div>
+
+    <div class="unit">
+        <h2 id="welcome"><span>#</span> Welcome to the Program!</h2>
+
+        <div class="lesson">
+            <h3><span>&gt</span> Nanodegree Orientation</h3>
+            <div>
+                <h4>Welcome</h4>
+                <ul>
+                    <li>Over the last 20 years, the web has changed into a powerful platform that is now interactive, and it rapidly continues to grow and change every day</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>What You'll Build</h4>
+                <ul>
+                    <li>Without front-end web developers, the web would look pretty boring and plain, most of your favorite websites would be unrecognizable</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Your Instructors</h4>
+                <ul>
+                    <li>Richard Kalehoff and Andrew Wong are the main instructors for the course</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> Career Services Available to You</h3>
+            <div>
+                <h4>Meet the Careers Team</h4>
+                <ul>
+                    <li>In this Nanodegree program, get personalized feedback on LinkedIn and GitHub profiles</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Access Your Career Portal</h4>
+                <ul>
+                    <li>Use the Career Portal to get personalized job search guide that includes 1:1 reviews of resume, LinkedIn profile, and more</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Your Udacity Professional Profile</h4>
+                <ul>
+                    <li>If you are looking for a job, make sure to keep your Udacity Professional Profile updated and visible to recruiters!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> Get Help from Peers and Mentors</h3>
+            <div>
+                <h4>What It Takes</h4>
+                <ul>
+                    <li>To graduate, you need to pass every project</li>
+                    <li>Don't panic. Don't quit. Be patient, and work the problem.</li>
+                    <li>The most important feedback you get from mentors will be directly from your project reviews</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Reviews</h4>
+                <ul>
+                    <li>The mentor will comment on which requirements you passed or failed line-by-line, and provide personalized suggestions for improvement or resources for further learning</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Knowledge</h4>
+                <ul>
+                    <li>Knowledge is Udacity's platform for asked and answered questions about projects and content, supported by Udacity mentors, other students and alumni</li>
+                    <li>If you have a question, search for it here, it may be answered</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Student Hub</h4>
+                <ul>
+                    <li>Student Hub is a real time collaboration platform where you can work with peers and mentors</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> Get Help with Your Account</h2>
+            <div>
+                <h4>FAQ</h4>
+                <ul>
+                    <li>Before creating a support request for a question about account or general question about the Nanodegree program, see the FAQ</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li>Still have a question after FAQ, then submit a support request</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="unit">
+        <h2 id="building"><span>#</span> The Building Blocks of Front-End Development</h2>
+        
+        <div class="lesson">
+            <h3><span>&gt</span> HTML Syntax</h3>
+            <div>
+                <h4>Lesson Introduction</h4>
+                <ul>
+                    <li>Trees are going to be a recurring theme throughout web development career</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>HTML Structure Part 1</h4>
+                <ul>
+                    <li>Each tag represents different elements, some elements do not have closing tags</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Make Your First Element</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                    <li><strong>p</strong> is a block element and <strong>span</strong> is an inline element</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Environments</h4>
+                <ul>
+                    <li>IDE stands for Integrated Development Environment</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Text Editors</h4>
+                <ul>
+                    <li>Visual Studio Code and Atom Editor are hugely popular and the majority of web developers that you'll meet will probably be using one or the other</li>
+                    <li>Emacs and Vim have steeper learning curves and are in the Unix Editor Wars</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Browsers</h4>
+                <ul>
+                    <li>Websites run in browsers, which means you need some browsers to run websites</li>
+                    <li>Google Chrome and Mozilla Firefox are two of the most popular cross-platform browsers</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Workflow</h4>
+                <ul>
+                    <li>Text editor -> save file -> open in browser</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Trees</h4>
+                <ul>
+                    <li>A tree is a type of data in computer science, which is used to represent hierarchical data</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>HTML and Trees</h4>
+                <ul>
+                    <li>Trees of an HTML can be as wide or as deep as you need it to be</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Spot the Bug</h4>
+                <ul>
+                    <li>Pay attention to details when writing HTML</li>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: HTML Research</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                    <li>Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">MDN HTML Element Reference page</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>HTML Structure Part 2</h4>
+                <ul>
+                    <li>The HTML document can be broken down into 3 parts:</li>
+                    <ol>
+                        <li><code>DOCTYPE</code>: Describes type of HTML, while there are technically different types, for majority of the HTML you'll write, <code>&lt!DOCTYPE html&gt</code> will be fine</li>
+                        <li><code>&lthead&gt</code>: Describes meta information about the site, such as the title, and provides links to scripts and stylesheets the site needs to render and behave correctly</li>
+                        <li><code>&ltbody&gt</code>: Describes the actual content of the site that users will see</li>
+                    </ol>
+                    <li>It is good practice to include all the basic parts of the template so that you are not relying on the guesswork of browsers to display your sites correctly</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>HTML Documents in Depth</h4>
+                <ul>
+                    <li>Browsers look for doctype declaration to determine which <strong>rendering mode</strong> to use to render the site</li>
+                    <li>All of the HTML syntax that you've learned in this lesson will help you create the <strong>content</strong> of the page, which is always contained inside the <code>&ltbody&gt</code> tags, the body is always visible </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Wrap Up</h4>
+                <ul>
+                    <li>Use what you've learned here to work through the problem sets in the next lesson</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> HTML Syntax Problem Set</h3>
+            <div>
+                <h4>Welcome to the Problem Set!</h4>
+                <ul>
+                    <li>The purpose of this problem set is to help you practice writing HTML</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Make a Button</h4>
+                <ul>
+                    <li>To learn more about <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_button">buttons</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Make a Button Solution</h4>
+                <ul>
+                    <li>Click <a href="http://udacity.github.io/fend/fend-refresh/lesson2/problem-set/button-example.html" target="_blank">here</a> for solution</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Make All the Headers</h4>
+                <ul>
+                    <li>Websites have different ways to show you, the user, what is important, take for example the use of <strong>headers</strong></li>
+                    <li>The header is represented by six levels of section headings, with <code>h1</code> being the highest section level and <code>h6</code> as the lowest</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Make a List</h4>
+                <ul>
+                    <li>Making sense of documentation and looking up new techniques and technologies is a huge part of any web developer's work</li>
+                    <li>There are two types of lists - ordered lists (with numbers or letters) and unordered lists</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Tree to HTML</h4>
+                <ul>
+                    <li>Use tree models to create HTML</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Constructing Links</h4>
+                <ul>
+                    <li>A link that you click that takes you to another page is called a <strong>hyperlink</strong></li>
+                    <li>Hyperlinks are created with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">anchor elements</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Add an Image</h4>
+                <ul>
+                    <li>Here's the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">MDN reference about images</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>A Guide to Paths</h4>
+                <ul>
+                    <li>A path is a way of describing where a file is stored</li>
+                    <li>A street address is like an absolute path to a location, while the phrase "next door" is a relative path because it depends on your current location</li>
+                    <li>There essentially two domains for paths that you'll need to consider as a web developer: paths to find files on your computer, <strong>local</strong> files, and paths to find files on other computers, <strong>external</strong> files</li>
+                    <li><em>All</em> of your files are organized into a tree of directories called a <strong>file sysem</strong></li>
+                    <li>The top-most directory is called the <strong>root</strong> and it contains all of the other directories</li>
+                    <li>The computer responsible for giving you a website's files is called a <strong>server</strong> (the requesting computers are called <strong>clients</strong>)</li>
+                    <li>Servers have an <strong>external path</strong> that anyone can access and is the reason why the web works</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Figures</h4>
+                <ul>
+                    <li>It's important to respect copyright and attribution on the web, use of figures may help do so</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Mockup to Website</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> CSS Syntax</h3>
+            <div>
+                <h4>Getting Started with CSS</h4>
+                <ul>
+                    <li>DevTools is very useful when styling your web page</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>What is CSS?</h4>
+                <ul>
+                    <li>CSS (Cascading Style Sheets) is the markup language that we use to describe how elements on websites should look</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: CSS or HTML</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CSS Rulesets</h4>
+                <ul>
+                    <li>All CSS begins with what is know as a <strong>ruleset</strong>, which is made up of two parts: selector and declaration block</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CSS Syntax</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Comments</h4>
+                <ul>
+                    <li>A <strong>comment</strong> is a human-readable message inside code</li>
+                    <li>Comments are great because they allow you, the developer, to leave clarifying messages and instructions for other developers</li>
+                    <li>Every programming language gives you the ability to write comments</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Tag Selectors</h4>
+                <ul>
+                    <li>The best way to find out is to try it out</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Attributes and Selectors</h4>
+                <ul>
+                    <li><code>class</code> and <code>id</code> attribute selectors can be used along with tag selectors</li>
+                    <li>IDs are unique and the same ID should not be used more than once on a page</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Using Selectors</h4>
+                <ul>
+                    <li>Classes are easily one of the easiest and versatile type of selectors that you can use</li>
+                    <li>Understanding selectors is the biggest key to understanding CSS</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Using CSS References</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a></li>
+                    <li><a href="https://css-tricks.com/almanac/" target="_blank">CSS Almanac</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Developer Tools</h4>
+                <ul>
+                    <li>Learning how to use the DevTools is essential for developers</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Developer Tools on Different Browsers</h4>
+                <ul>
+                    <li>Use Google Chrome</li>
+                    <li>For Macs use <code>Ctrl + Option + i</code> to open Chrome DevTools</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Using Developer Tools</h4>
+                <ul>
+                    <li>You can learn a lot about a websites HTML and CSS using DevTools</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CSS Units</h4>
+                <ul>
+                    <li>Two types of units in CSS: absolute and relative</li>
+                    <li>Relative units are great for responsive web design</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Unites in CSS</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>CSS Colors</h4>
+                <ul>
+                    <li>You can add color to your website using CSS</li>
+                    <li>The amount of red, green, and blue light determines which color you see</li>
+                    <li>Fun fact: the RGB combination makes up 16,777,216 colors!</li>
+                    <li><a href="https://www.howtostartanllc.org/free-stock-photos/" target="_blank">Free Stock Photos</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Identifying Colors</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank">CSS Shorthand Properties</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Outro</h4>
+                <ul>
+                    <li>Next lesson will be a set of CSS problems</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

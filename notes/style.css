@@ -1,0 +1,80 @@
+html {
+    margin: 1em 3em;
+}
+
+body {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 300; 
+}
+
+.table {
+    border: .175em solid rgba(211, 211, 211, 0.35);;
+    border-radius: .25em;
+    padding: 0 1.25em;
+    margin-bottom: 2em;
+}
+
+.table ol {
+    margin: 1em 0 1.5em 0;
+    padding-left: 1em;
+}
+
+.table ol li {
+    margin: 1em 0 1em .5em;
+}
+
+.table a {
+    border: none;
+}
+
+.table a:hover {
+    color: rgba(51, 182, 229, 1);
+    border-bottom: .08em solid rgba(51, 182, 229, 1);
+}
+
+.unit {
+    border: .175em solid rgba(211, 211, 211, 0.35);;
+    border-radius: .25em;
+    padding: 0 1.25em;
+    margin-bottom: 2em;
+}
+
+.lesson {
+
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    padding: .5em 1em;
+    border-radius: .25em;
+    background-color: rgba(211, 211, 211, 0.35);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(51, 182, 229, 1);
+    border-bottom: .08em solid rgba(51, 182, 229, 1);
+    font-weight: 400;
+}
+
+a:hover {
+    color: black;
+    border-bottom: none;
+}
+
+span {
+    color: rgba(51, 182, 229, 1);
+}
+
+code {
+    background-color: #f7f7f8;
+    border: 1px solid #b4b9bd;
+    border-radius: .25rem;
+    padding: .2em;
+}
