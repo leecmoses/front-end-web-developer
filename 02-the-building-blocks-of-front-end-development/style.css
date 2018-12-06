@@ -1,0 +1,14 @@
+.kitten-image {
+    border: 5px dashed #fa8072;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #ccc;
+}
+
+.udacity-text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #8001ff;
+}
