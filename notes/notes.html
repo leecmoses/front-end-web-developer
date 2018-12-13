@@ -1225,7 +1225,58 @@
             <div>
                 <h4>Quiz: Hide Some Columns</h4>
                 <ul>
-                    <li></li>
+                    <li>Difference between <code>display: none</code> and <code>visibility: hidden</code> is that using the CSS property/value pair of <code>visibility: hidden</code> hides an element from the browser, but that hidden element still takes up space in the layout</li>
+                    <li>However, <code>display: none</code>, removes the element completely from the document and so does not take up any space, even though the HTML for it is still in the source code</li>
+                    <li>Read more about the differences <a href="https://www.lifewire.com/display-none-vs-visibility-hidden-3466884" target="_blank">here</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Responsive Tables - No More Tables</h4>
+                <ul>
+                    <li>With the no more tables technique, below a certain viewport width, the table is collapsed and resembles a long list, as opposed to a table data</li>
+                    <li>The nice thing about this technique is that all the data is visible no matter what the size of the viewport is</li>
+                    <li>Implement the technique follow the following steps</li>
+                    <ol>
+                        <li>Set table, thead, tbody, th, td, tr to display as block</li>
+                        <li>Get rid of the thead tr (table header) by using an absolute position off the screen (e.g., <code>top: -9999px; left: -9999px;</code>)</li>
+                        <li>Make room for header by using relative position and by adding padding-left for the td</li>
+                        <li>To add row labels use the before pseudo selector and add <code>td:before</code> using position absolute and <code>content: attr(data-th);</code> to pull the values from the data-th of each of the td elements</li>
+                    </ol>
+                    <li>You can play with this specific example <a href="https://codepen.io/JohnMav/pen/BoGJNy" target="_blank">here</a></li>
+                    <li>Learn more <a href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank">responsive table techniques</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Responsive Tables - Contained Scrolling</h4>
+                <ul>
+                    <li>One of the easiest things you can do, to contain the table in the viewport is to wrap it in a div and set the <code>width: 100%;</code> and <code>overflow-x: auto;</code></li>
+                    <li>Instead of breaking out of the viewport, the table will instead, take up the same width, but will scroll within in the width of the viewport </li>
+                    <li>You can play with this example <a href="https://codepen.io/JohnMav/pen/Mazrwm" target="_blank">here</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Fonts</h4>
+                <ul>
+                    <li>Use <strong>measures</strong> as a factor for picking breakpoints</li>
+                    <li><strong>Measure</strong> is the technical term for the length of a line of text</li>
+                    <li>With only a few words per line, it's kind of awkward to read</li>
+                    <li>However, if a line of text is too long, readers get lost when trying to find the next line and end up reading the same thing over and over again or might get lazy and start skimming</li>
+                    <li>Ideal measure is 45-90 characters per line (cpl) depending on the font used, if it is printed, projected, or on a computer screen</li>
+                    <li>But, there seems to be a pretty solid consensus around <em>65 cpl</em></li>
+                    <li>Font size is alo important to consider, at a minimum use <code>font-size: 16px;</code> and <code>line-height: 1.2em;</code></li>
+                    <li>Depending on the situation, for text heavy sites use <code>font-size: 18px;</code> and <code>line-height: 1.25em;</code></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Minor Breakpoints</h4>
+                <ul>
+                    <li>It's also helpful to add <strong>minor breakpoints</strong> to make some small changes between major breakpoints</li>
+                    <li>For example, it may be helpful to adjust margins and paddings on an element or to increase the font size to make things, a bit easier to read and feel more natural in the layout</li>
+                    <li>Use minor breakpoints, to adjust the little things and make things shine!</li>
                 </ul>
             </div>
         </div>
