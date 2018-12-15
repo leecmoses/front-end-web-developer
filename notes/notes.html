@@ -1160,7 +1160,9 @@
             <div>
                 <h4>Pattern - Off Canvas</h4>
                 <ul>
-                    <li>With off canvas, instead of stacking content vertically, the off canvas places less frequently used content, for example navigation or app menus, off screen, only showing if the screen is large enough</li>
+                    <li>With off canvas, instead of stacking content vertically, the off canvas places less frequently
+                        used content, for example navigation or app menus, off screen, only showing if the screen is
+                        large enough</li>
                 </ul>
             </div>
 
@@ -1201,7 +1203,8 @@
                 <ul>
                     <li>Images account for more than 60% of the bytes on average needed to load a web page</li>
                     <li>It is important to consider images when designing responsive websites</li>
-                    <li>Take Google's Sam Dutton's class on Responsive Images <a href="https://www.udacity.com/course/responsive-images--ud882" target="_blank">here</a></li>
+                    <li>Take Google's Sam Dutton's class on Responsive Images <a href="https://www.udacity.com/course/responsive-images--ud882"
+                            target="_blank">here</a></li>
                 </ul>
             </div>
 
@@ -1216,8 +1219,10 @@
             <div>
                 <h4>Responsive Tables - Hidden Columns</h4>
                 <ul>
-                    <li>Hidden columns essentially hides columns based on their importance as the viewport size gets smaller</li>
-                    <li>The biggest problem of hidden columns is that you're hiding content from the user, use this technique with caution</li>
+                    <li>Hidden columns essentially hides columns based on their importance as the viewport size gets
+                        smaller</li>
+                    <li>The biggest problem of hidden columns is that you're hiding content from the user, use this
+                        technique with caution</li>
                     <li>If possible, use abbreviated data instead of hiding it completely</li>
                 </ul>
             </div>
@@ -1225,34 +1230,46 @@
             <div>
                 <h4>Quiz: Hide Some Columns</h4>
                 <ul>
-                    <li>Difference between <code>display: none</code> and <code>visibility: hidden</code> is that using the CSS property/value pair of <code>visibility: hidden</code> hides an element from the browser, but that hidden element still takes up space in the layout</li>
-                    <li>However, <code>display: none</code>, removes the element completely from the document and so does not take up any space, even though the HTML for it is still in the source code</li>
-                    <li>Read more about the differences <a href="https://www.lifewire.com/display-none-vs-visibility-hidden-3466884" target="_blank">here</a></li>
+                    <li>Difference between <code>display: none</code> and <code>visibility: hidden</code> is that using
+                        the CSS property/value pair of <code>visibility: hidden</code> hides an element from the
+                        browser, but that hidden element still takes up space in the layout</li>
+                    <li>However, <code>display: none</code>, removes the element completely from the document and so
+                        does not take up any space, even though the HTML for it is still in the source code</li>
+                    <li>Read more about the differences <a href="https://www.lifewire.com/display-none-vs-visibility-hidden-3466884"
+                            target="_blank">here</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Responsive Tables - No More Tables</h4>
                 <ul>
-                    <li>With the no more tables technique, below a certain viewport width, the table is collapsed and resembles a long list, as opposed to a table data</li>
-                    <li>The nice thing about this technique is that all the data is visible no matter what the size of the viewport is</li>
+                    <li>With the no more tables technique, below a certain viewport width, the table is collapsed and
+                        resembles a long list, as opposed to a table data</li>
+                    <li>The nice thing about this technique is that all the data is visible no matter what the size of
+                        the viewport is</li>
                     <li>Implement the technique follow the following steps</li>
                     <ol>
                         <li>Set table, thead, tbody, th, td, tr to display as block</li>
-                        <li>Get rid of the thead tr (table header) by using an absolute position off the screen (e.g., <code>top: -9999px; left: -9999px;</code>)</li>
+                        <li>Get rid of the thead tr (table header) by using an absolute position off the screen (e.g.,
+                            <code>top: -9999px; left: -9999px;</code>)</li>
                         <li>Make room for header by using relative position and by adding padding-left for the td</li>
-                        <li>To add row labels use the before pseudo selector and add <code>td:before</code> using position absolute and <code>content: attr(data-th);</code> to pull the values from the data-th of each of the td elements</li>
+                        <li>To add row labels use the before pseudo selector and add <code>td:before</code> using
+                            position absolute and <code>content: attr(data-th);</code> to pull the values from the
+                            data-th of each of the td elements</li>
                     </ol>
                     <li>You can play with this specific example <a href="https://codepen.io/JohnMav/pen/BoGJNy" target="_blank">here</a></li>
-                    <li>Learn more <a href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank">responsive table techniques</a></li>
+                    <li>Learn more <a href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank">responsive
+                            table techniques</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Responsive Tables - Contained Scrolling</h4>
                 <ul>
-                    <li>One of the easiest things you can do, to contain the table in the viewport is to wrap it in a div and set the <code>width: 100%;</code> and <code>overflow-x: auto;</code></li>
-                    <li>Instead of breaking out of the viewport, the table will instead, take up the same width, but will scroll within in the width of the viewport </li>
+                    <li>One of the easiest things you can do, to contain the table in the viewport is to wrap it in a
+                        div and set the <code>width: 100%;</code> and <code>overflow-x: auto;</code></li>
+                    <li>Instead of breaking out of the viewport, the table will instead, take up the same width, but
+                        will scroll within in the width of the viewport </li>
                     <li>You can play with this example <a href="https://codepen.io/JohnMav/pen/Mazrwm" target="_blank">here</a></li>
                 </ul>
             </div>
@@ -1263,10 +1280,13 @@
                     <li>Use <strong>measures</strong> as a factor for picking breakpoints</li>
                     <li><strong>Measure</strong> is the technical term for the length of a line of text</li>
                     <li>With only a few words per line, it's kind of awkward to read</li>
-                    <li>However, if a line of text is too long, readers get lost when trying to find the next line and end up reading the same thing over and over again or might get lazy and start skimming</li>
-                    <li>Ideal measure is 45-90 characters per line (cpl) depending on the font used, if it is printed, projected, or on a computer screen</li>
+                    <li>However, if a line of text is too long, readers get lost when trying to find the next line and
+                        end up reading the same thing over and over again or might get lazy and start skimming</li>
+                    <li>Ideal measure is 45-90 characters per line (cpl) depending on the font used, if it is printed,
+                        projected, or on a computer screen</li>
                     <li>But, there seems to be a pretty solid consensus around <em>65 cpl</em></li>
-                    <li>Font size is alo important to consider, at a minimum use <code>font-size: 16px;</code> and <code>line-height: 1.2em;</code></li>
+                    <li>Font size is alo important to consider, at a minimum use <code>font-size: 16px;</code> and
+                        <code>line-height: 1.2em;</code></li>
                     <li>Depending on the situation, for text heavy sites use <code>font-size: 18px;</code> and <code>line-height: 1.25em;</code></li>
                 </ul>
             </div>
@@ -1274,8 +1294,10 @@
             <div>
                 <h4>Minor Breakpoints</h4>
                 <ul>
-                    <li>It's also helpful to add <strong>minor breakpoints</strong> to make some small changes between major breakpoints</li>
-                    <li>For example, it may be helpful to adjust margins and paddings on an element or to increase the font size to make things, a bit easier to read and feel more natural in the layout</li>
+                    <li>It's also helpful to add <strong>minor breakpoints</strong> to make some small changes between
+                        major breakpoints</li>
+                    <li>For example, it may be helpful to adjust margins and paddings on an element or to increase the
+                        font size to make things, a bit easier to read and feel more natural in the layout</li>
                     <li>Use minor breakpoints, to adjust the little things and make things shine!</li>
                 </ul>
             </div>
@@ -1283,19 +1305,53 @@
             <div>
                 <h4>Final Project Updates</h4>
                 <ul>
-                    <li><li>See RWPD L5 Start in supporting materials folder</li></li>
-                    <li><a href="https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/" target="_blank">Here's a trick</a> for adding an ellipsis to a single line</li>
-                    <li><a href="http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/" target="_blank">Here's a trick</a> for adding an ellipsis when you have multiple lines</li>
+                    <li>
+                    <li>See RWPD L5 Start in supporting materials folder</li>
+                    </li>
+                    <li><a href="https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/" target="_blank">Here's
+                            a trick</a> for adding an ellipsis to a single line</li>
+                    <li><a href="http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/"
+                            target="_blank">Here's a trick</a> for adding an ellipsis when you have multiple lines</li>
                 </ul>
             </div>
 
             <div>
                 <h4>Wrap Up</h4>
                 <ul>
-                    <li>Start small and work-up using breakpoints and media queries, to change the page layout for different devices</li>
+                    <li>Start small and work-up using breakpoints and media queries, to change the page layout for
+                        different devices</li>
                 </ul>
             </div>
-            
+
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt;</span> Writing READMEs</h3>
+            <div>
+                <h4>Welcome</h4>
+                <ul>
+                    <li>Documentation is an important part of the development process and should be incorporated into projects moving forward</li>
+                    <li>This course is relevant to anyone that writes code or works with others who do</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>What is Documentation?</h4>
+                <ul>
+                    <li><strong>Technical documentation</strong> helps us to make sense of code, without it developers would not know how to use other developers' code</li>
+                    <li>Check out the <a href="https://github.com/udacity/ud777-writing-readmes" target="_blank">Writing READMEs README</a> over on GitHub</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Who is Documentation for?</h4>
+                <ul>
+                    <li>Code is written for computers while documentation is written for humans</li>
+                    <li>Anybody who uses your code is going to be needing to se documentation, that might be you, your coworkers, or your users!</li>
+                </ul>
+            </div>
+
+
         </div>
 
     </div>
