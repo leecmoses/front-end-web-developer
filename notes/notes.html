@@ -1351,6 +1351,126 @@
                 </ul>
             </div>
 
+            <div>
+                <h4>How Does Nija Consume Documentation?</h4>
+                <ul>
+                    <li>We consume documentation everyday because we use third party libraries and tools</li>
+                    <li>If no documenation is available, realistically we would switch to a library that is better documented or write our own internal documentation if we really need to use that particular library or tool</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Why Should Art Have Documented His Code?</h4>
+                <ul>
+                    <li>Documentation is helpful especially if you have to revisit a project you did a while back!</li>
+                    <li>Make sure to document projects even for your future self!!</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Introduction to READMEs</h4>
+                <ul>
+                    <li><strong>README</strong> is a single file that is used to document smaller projects</li>
+                    <li>Take note of the following when reading READMEs:</li>
+                    <ul>
+                        <li>What information is being communicated?</li>
+                        <li>How is this information structured?</li>
+                        <li>Do you notice any patterns?</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Anatomy of a README</h4>
+                <ul>
+                    <li>A README should provide just enough context to get a user up and running with your code</li>
+                    <li>Start with a title and description, include logo if feeling extra fancy</li>
+                    <li>Next, include any information that is absolutely necessary for understanding your code</li>
+                    <li>Remember, there is no particular structure for a README!</li>
+                    <li>Few questions to ask yourself when writing a README:</li>
+                    <ol>
+                        <li>What steps need to be taken?</li>
+                        <li>What should the user already have installed or configured?</li>
+                        <li>What might they have a hard time understanding right away?</li>
+                    </ol>
+                    <li>Often developers will have an installation section</li>
+                    <li>Remember you're already familiar with your code but users will not be, so see it from their perspective</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Documenting a Growing Codebase</h4>
+                <ul>
+                    <li>Lets go over a few common sections and their use cases in a README</li>
+                    <li>Including copyright or licensing information, or at least a link to it, is a good idea regardless of project size</li>
+                    <li>Contributing section is also a good idea for users that want to help</li>
+                    <li>Some services, like ones that check to see if all your tests are passing, will provide special graphics known as shields, for your READMEs</li>
+                    <li>These shields are useful because they're provided by a third party, and let your users know helpful information about your code</li>
+                    <li>Allow your documentation to grow with the code base and only add new information as needed</li>
+                    <li>As a codebase grows, you may want to add additional sections such as: Known Bugs, FAQ, and Table of Contents</li>
+                    <li>You can use <a href="https://choosealicense.com/" target="_blank">Choose a License</a> to help you, well... choose a license for your projects</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Readable READMEs with Markdown</h4>
+                <ul>
+                    <li>A README file can technically be written in any file format: web page, simple text file, or even a made up format if you wanted to</li>
+                    <li>However, generally most use a language called <strong>Markdown</strong></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Basic Markdown Syntax</h4>
+                <ul>
+                    <li><strong>Markdown</strong> is a light markup language often used for READMEs, it is fairly straightforward, and much of the syntax is intuitive</li>
+                    <li>But as it turns out, there are may different <em>dialects</em> of Markdown, just like a spoken language, each of these dialects is known as a <em>flavor</em> of Markdown</li>
+                    <li>Most of these dialects are pretty much the same, with only minor differences</li>
+                    <li>We will be using <strong>GitHub Flavored Markdown</strong></li>
+                    <li>To make text <strong>bold</strong> surround it with double asterisks, <code>Isn't today a **wonderful** day?</code></li>
+                    <ul>
+                        <li>This reads a bit more nicely than a <code>&lt;strong&gt;</code> tag would in HTML, and takes considerably few keystrokes to type out</li>
+                    </ul>
+                    <li>To <em>italicize</em> text, surround it with underscores, <code>And in that moment I thought to myself: _Did I turn off the stove?_</code></li>
+                    <li>Inline <code>code</code> is useful for indicating that you're writing code and not a regular word</li>
+                    <ul>
+                        <li>For this surround text in backticks (`, not a single quote), <code>You should use the `strong` tag.</code></li>
+                    </ul>
+                    <li>For <code>h1</code> through <code>h6</code> tags, all you'll need is a <code>#</code> before your text</li>
+                    <ul>
+                        <li>The number of <code>#</code>s you include tells the Markdown which header tag you're using, <code>## This is an h2.</code></li>
+                    </ul>
+                    <li>Basic <a href="https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/" target="_blank">Markdown documentation</a></li>
+                    <li>GitHub flavored Markdown <a href="https://help.github.com/categories/writing-on-github/" target="_blank">here</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Basic Markdown Syntax Quiz</h4>
+                <ul>
+                    <li>A single <code>*</code> may sometimes also work for italicizing text in some flavors of Markdown</li>
+                    <li>Make sure you note which flavor of Markdown you're using</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>More Markdown Syntax</h4>
+                <ul>
+                    <li>Something to keep in mind when using Markdown is that HTML is still valid in Markdown</li>
+                    <li>If there's ever something fancy you can't accomplish with just Markdown, it's okay to fall back to HTML, but the catch here is that you may be overcomplicating things</li>
+                    <li>Much like how your HTML files should be saved with a <code>.html</code> extension, your Markdown files should be saved with a <code>.md</code> extension</li>
+                    <li>Markdown itself can't be opened in the browser like an HTML document, so if you want to preview your Markdown files, <a href="https://dillinger.io/" target="_blank">Dillinger</a> is a great online resource for you to do so</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Document Everything</h4>
+                <ul>
+                    <li>If and when your code grows, you may want to explore other forms of documentation but README is a great place to start</li>
+                    <li>Writing great code isn't just about building something that works, but building something that's both easy to use and easy to maintain</li>
+                    <li>Make documentation a priority for all your projects moving forward!</li>
+                </ul>
+            </div>
 
         </div>
 
