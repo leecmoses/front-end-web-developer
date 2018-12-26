@@ -1540,7 +1540,94 @@
 
             <div>
                 <h4>Object Literal Shorthand</h4>
+                <ul>
+                    <li>You can remove duplicate variables names from object properties if the properties have the same name as the variables being assigned to them</li>
+                    <li>As the keyword <strong>function</strong> can be dropped from the method since you only to reference the method in order to call the function, having the function keyword is redundant</li>
+                </ul>
             </div>
+
+            <div>
+                <h4>Lesson 1 Checkup</h4>
+                <ul>
+                    <li>Start using let & const, template literals, destructuring, and object literal shorthands</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Iteration</h4>
+                <ul>
+                    <li>New ways to iterate over an object in ES6 such as the <em>for of loop</em></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Family of For Loops</h4>
+                <ul>
+                    <li>The <strong>for loop</strong> is obviously the cost common type of loop there is</li>
+                    <ul>
+                        <li>Biggest downside of a for loop is having to keep track of the counter and exit condition</li>
+                        <li>While for loops certainly have an advantage when looping through arrays, some data is not structured like an array, so a for loop isn't always an option</li>
+                    </ul>
+                    <li>The <strong>for in loop</strong> improves upon the weaknesses of the for loop by eliminating the counting logic and exit condition</li>
+                    <ul>
+                        <li>However, you still have to deal with the issue of using an <strong>index</strong> to access the values of the array, and that stinks; it almost makes itmore confusing than before</li>
+                        <li>The for in loop can get you into big trouble when you need to add an extra method to an array (or another object) because for in loops loop over all enumerable properties, this means if you add any additional properties to the array's prototype, then those properties will also appear in the loop</li>
+                    </ul>
+                    <li>The <strong>forEach loop</strong> is another type of for loop in JavaScript, but <code>forEach()</code> is actually an array method, so it can only be used exclusively with arrays</li>
+                    <ul>
+                        <li>There is also no way to stop or break a forEach loop, if you need that type of behavior in your loop, you'll have to use a basic for loop</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>For...of Loop</h4>
+                <ul>
+                    <li>The <strong>for of loop</strong> is used to loop over any type of data that is <em>iterable</em></li>
+                    <li>It's good practice to use plural names for objects that are collections of values</li>
+                    <li>That way, when you loop over the collection, you can use the singular version of the name when referencing individual values in the collection</li>
+                    <li>You can stop or break a for of loop at anytime using conditionals and you don't have to worry about adding new properties to objects</li>
+                    <li>The for of loop will only loop over the values in the object!</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Writing a For...of Loop (1-4)</h4>
+                <ul>
+                    <li>Note: splice() method mutates original array while slice() method does not because it creates a new array</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Spread...Operator</h4>
+                <ul>
+                    <li>The <strong>spread operator</strong>, written with three consecutive dots (<code>...</code>), is new in ES6 and gies you the ability to expand, or spread, iterable objects into multiple elements</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>...Rest Parameter</h4>
+                <ul>
+                    <li>The <strong>rest parameter</strong>, also written with three consecutive dots (<code>...</code>), allows you to represent an indefinite number of elements as an array, this can be helpful in a couple of different situations</li>
+                    <li>By using the rest parameter, the variable is assigned the <em>rest of the values</em> in the array (as an array)</li>
+                    <li>Another use case for the rest parameter is when you're working with functions that take an indefinite number of arguments (<strong>variadic functions</strong>)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Using the Rest Parameter (1-5)</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson 1 Summary</h4>
+                <ul>
+                    <li>Watched video</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
