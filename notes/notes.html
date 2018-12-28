@@ -1642,6 +1642,72 @@
             <div>
                 <h4>The DOM</h4>
                 <ul>
+                    <li>HTML is received, HTML tags are converted to tokens, tokens are converted to Nodes, Nodes are converted to the DOM</li>
+                    <li>The DOM is the full parse representation of the HTML markup</li>
+                    <li>The DOM stands for "Document Object Model" and is a tree-like structure that is a representation of the HTML document, the relationship between elements, and contains the content and properties of the elements</li>
+                    <li>The DOM is <em>not</em> part of the JavaScript language</li>
+                    <li>The DOM is constructed from the browser and is globally accessible by JavaScript code using the <code>document</code> object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Selecting Page Elements With CSS Selectors</h4>
+                <ul>
+                    <li>Being able to select HTML elements is a vital skill when learning ow to access page elements using JavaScript and the DOM!</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Select Page Element By ID</h4>
+                <ul>
+                    <li><code>document.getElementById('footer')</code></li>
+                    <ul>
+                        <li>Notice, it is <code>'footer'</code>, not <code>'#footer'</code> because it already knows that it's searching for an ID</li>
+                        <li>It is called on the <code>document</code> object</li>
+                        <li>It returns a <em>single</em> item</li>
+                        <li>Passing an unknown ID returns <code>null</code></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Select Page Elements By Class Or Tag</h4>
+                <ul>
+                    <li><code>document.getElementsByClassName();</code> and <code>document.getElementsByTagName('span');</code></li>
+                    <ul>
+                        <li>Both methods use the <code>document</code> object</li>
+                        <li>Both returns multiple items</li>
+                        <li>The list that's returned is not an array</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Notes, Elements, and Interfaces...Oh My!</h4>
+                <ul>
+                    <li><strong>Node</strong> (with a capital "N") is a blueprint that contains information about all of the properties and methods for real nodes (with a lowercase "n")</li>
+                    <li>If you're not used to the words interface, property, and method, it can be kind of cryptic at first, just remember:</li>
+                    <ul>
+                        <li>interface = blueprint</li>
+                        <li>properties = data</li>
+                        <li>methods = functionality</li>
+                    </ul>
+                    <li>So the Node Interface is a blueprint for all of the properties (data) and methods (functionality) that every real node has after it's been created</li>
+                    <li>Just like the Node Interface, the Element Interface is a blueprint for creating elements</li>
+                    <ul>
+                        <li>The Element Inteface is a descendent of the Node Interface</li>
+                        <li>This indicates that the Element Interface inherits all of the Node Interface's properties and methods</li>
+                    </ul>
+                    <li>The <code>.outerHTML</code> and <code>.id</code> properties come from the Element Interface while the <code>.textContent</code> property comes from the Node Interface</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node" target="_blank">Node Interface on MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element" target="_blank">Element Interface on MDN</a></li>
+                    <li>To check out all of the different interfaces, check here: <a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">Web API Interfaces</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>More Ways To Access Elements</h4>
+                <ul>
                     <li></li>
                 </ul>
             </div>
