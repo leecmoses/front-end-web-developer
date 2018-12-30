@@ -1730,6 +1730,35 @@
                 </ul>
             </div>
         </div>
+
+        <div class="lesson">
+            <h3><span>&gt</span> The Document Object Model</h3>
+            <div>
+                <h4>Introduction</h4>
+                <ul>
+                    <li>Start to create, delete, and manipulate JS and the DOM elements</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Update Existing Page Content</h4>
+                <ul>
+                    <li>Every element has an <code>.innerHTML</code> property</li>
+                    <ul>
+                        <li>Use this property to get an element's (and all of its descendants) HTML content and to set an element's HTML content</li>
+                        <li>It returns a <strong>DOMString</strong></li>
+                    </ul>
+                    <li><code>.outerHTML</code> represents the HTML element itself, <em>as well as its children</em></li>
+                    <li>If you want the text content, use the <code>.textContent</code>property</li>
+                    <ul>
+                        <li>The property will set the text content of an element and all its descendants and return the text content of an element and all its descendants</li>
+                        <li>Passing any text that looks like HTML to the property will still be displayed as text, it will <em>not</em> be displayed as HTML when the element is rendered</li>
+                    </ul>
+                    <li><code>.innerText</code> will get the <em>visible</em> text of the element</li>
+                    <li>Between <code>.textContent</code> and <code>.innerText</code>, you probably want to use <code>.textContent</code> since that will return all of the text no matter what</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </body>
