@@ -1758,6 +1758,26 @@
                     <li>Between <code>.textContent</code> and <code>.innerText</code>, you probably want to use <code>.textContent</code> since that will return all of the text no matter what</li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Add New Page Content</h4>
+                <ul>
+                    <li><code>.createElement()</code> to create new elements</li>
+                    <li><code>.appendChild()</code> to add a child element to a parent element as its last child</li>
+                    <ul>
+                        <li>If an element <em>already exists in the DOM</em> and this element is passed to <code>.appendChild()</code>, the <code>.appendChild()</code> method will <em>move it</em> rather than duplicating it</li>
+                    </ul>
+                    <li><code>.createTextNode()</code> to create a text node</li>
+                    <ul>
+                        <li>An element's <code>.textContent</code> property is used more often than creating a text node with the <code>.createTextNode()</code> method</li>
+                    </ul>
+                    <li><code>.insertAdjacentHTML()</code> to put HTML text anywhere around an element</li>
+                    <ul>
+                        <li>The method's second argument has to be text, you can not pass an element</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML" target="_blank">insertAdjacentHTML on MDN</a></li>
+                    </ul>
+                </ul>
+            </div>
         </div>
     </div>
 
