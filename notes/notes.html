@@ -1778,6 +1778,15 @@
                     </ul>
                 </ul>
             </div>
+
+            <div>
+                <h4>Remove Page Content</h4>
+                <ul>
+                    <li><code>.removeChild()</code> must be called on the parent of the element being removed and must be passed the child to be removed</li>
+                    <li><code>.remove()</code> can be called directly on the element to delete</li>
+                    <li>The difference between <code>.firstChild</code> and <code>.firstElementChild</code>, is that <code>.firstElementChild</code> will always return the first element, while <code>.firstChild</code> <em>might</em> return whitespace (if there is any) to preserve the formatting of the underlying HTML source code</li>
+                </ul>
+            </div>
         </div>
     </div>
 
