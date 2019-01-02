@@ -1787,6 +1787,44 @@
                     <li>The difference between <code>.firstChild</code> and <code>.firstElementChild</code>, is that <code>.firstElementChild</code> will always return the first element, while <code>.firstChild</code> <em>might</em> return whitespace (if there is any) to preserve the formatting of the underlying HTML source code</li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Style Page Content</h4>
+                <ul>
+                    <li>Least to most specific: rules in a stylesheet -> rules in a <code>&lt;styles&gt;</code> -> rules in a tag's style attribute</li>
+                    <li>The web industry as a whole tries to stress the separation of concerns, styles should be in a style sheet, so instead of having styling in your JS file have JS control the class attribute for an element</li>
+                    <li><code>.style.&lt;prop&gt;</code> is used to modify individual styles</li>
+                    <li><code>.style.cssText</code> updates multiple styles at once</li>
+                    <ul>
+                        <li>Write the CSS styles just as you would in a stylesheet</li>
+                    </ul>
+                    <li><code>.setAttribute()</code> method can be used instead of either <code>.style.&lt;prop&gt;</code> or <code>.style.cssText</code></li>
+                    <ul>
+                        <li>However, this method is not for just styling page elements (e.g., ID of an element)</li>
+                    </ul>
+                    <li><code>.className</code> gets/sets a list of classes</li>
+                    <ul>
+                        <li>This property returns a string of all of the element's classes</li>
+                        <li>The string can be converted into an array using the <code>.split()</code> method</li>
+                        <li>As an array you can use <code>for</code> loops, the <code>.push()</code> method to add an item to the list, or <code>.pop()</code> to remove an item from the list</li>
+                    </ul>
+                    <li><code>.classList</code> gets/sets/toggles CSS classes</li>
+                    <ul>
+                        <li>New than the <code>.className</code> property, but much easier to use</li>
+                        <li>Returns a <strong>DOMTokenList</strong></li>
+                        <li>Has number of properties of its own: <code>.add()</code>, <code>.remove()</code>, <code>.toggle()</code>, <code>.contains()</code></li>
+                    </ul>
+                    <li><a href="https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/" target="_blank">Article: CSS Specificity: Things You Should Know</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Summary</h4>
+                <ul>
+                    <li>Learned to update, add, and remove content</li>
+                    <li>In the next section learn to write code to respond to user actions</li>
+                </ul>
+            </div>
         </div>
     </div>
 
