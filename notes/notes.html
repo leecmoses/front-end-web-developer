@@ -1835,6 +1835,30 @@
                     <li>Learn about what events are, how to respond to events, what data is stored in an event, and how to stop an event</li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Respond to Events</h4>
+                <ul>
+                    <li>The Node Interface inherits from the <code>EventTarget</code> interface</li>
+                    <li>EventTarget is an interface implemented by objects that can receive events and may have listeners for them</li>
+                    <li>Elements, document, and window are the most common event targets, but other objects can be event targets too</li>
+                    <li>The EventTarget Interface, doesn't have <em>any</em> properties and only three methods! These mehods are:</li>
+                    <ul>
+                        <li><code>.addEventListener()</code></li>
+                        <li><code>.removeEventListener()</code></li>
+                        <li><code>.dispatchEvent()</code></li>
+                    </ul>
+                    <li>An event listener needs three things:</li>
+                    <ol>
+                        <li>an event target - this is called the <strong>target</strong></li>
+                        <li>the type of event to listen for - this is called the <strong>type</strong></li>
+                        <li>a function to run when the event occurs - this is called the <strong>listener</strong></li>
+                    </ol>
+                    <li><code>monitorEvents()</code> function is useful to use when working with events</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">List of Events</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">Introduction to events</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
