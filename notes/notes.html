@@ -1859,6 +1859,44 @@
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" target="_blank">Introduction to events</a></li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Remove an Event Listener</h4>
+                <ul>
+                    <li>JS has the double equality (<code>==</code>) operator that <em>will allow type coercion</em>, while the triple equality (<code>===</code>) symbol that will prevent type coercion when comparing</li>
+                    <li>Even if two objects look identical and have the same information doesn't mean they are the same object</li>
+                    <li>It is equally important to know an object may have multiple names, but it is still referring to the same object</li>
+                    <li><a href="https://developers.google.com/web/updates/2015/05/easily-jump-to-event-listeners" target="_blank">Easily jump to event listeners</a></li>
+                    <li><a href="http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html" target="_blank">Article: Object Equality in JavaScript</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Phases of an Event</h4>
+                <ul>
+                    <li>There are three different phases during the lifecycle of an event:</li>
+                    <ul>
+                        <li>The <strong>capturing</strong> phase</li>
+                        <li>The <strong>at target</strong> phase</li>
+                        <li>And the <strong>bubbling</strong> phase</li>
+                    </ul>
+                    <li>There's actually a <em>third</em> argument to the <code>.addEventListener()</code> method; the <em>useCapture</em> argument</li>
+                    <li>By default, when <code>.addEventListener()</code> is called with only two arguments, the method defaults to using the bubbling phase</li>
+                    <li>When an event occurs, the browser includes an <strong>event object</strong>, this is just a regular JS object that includes a ton of information about the event itself</li>
+                    <li><code>.preventDefault()</code> method prevents the default action from occurring</li>
+                    <li><a href="https://www.w3.org/TR/DOM-Level-3-Events/#event-flow" target="_blank">Event dispatch and DOM event flow on W3C</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Avoid Too Many Events</h4>
+                <ul>
+                    <li><strong>Event Delegation</strong> is the process of delegating to a parent element the ability to manage events for child elements by making use of the event object and its <code>.target</code> property and the different phases of an event</li>
+                    <li><code>.nodeName</code> property will return a <em>capital string, not a lowercase one</em></li>
+                    <li><a href="https://javascript.info/event-delegation" target="_blank">Article: Event Delegation</a></li>
+                    <li><a href="https://davidwalsh.name/event-delegate" target="_blank">Article: How JavaScript Event Delegation Works</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
