@@ -1897,6 +1897,21 @@
                     <li><a href="https://davidwalsh.name/event-delegate" target="_blank">Article: How JavaScript Event Delegation Works</a></li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Know When The DOM is Ready</h4>
+                <ul>
+                    <li>JavaScript code in the <code>&lt;head&gt;</code> will run before JavaScript code in the <code>&lt;body&gt;</code>, so if you do have JavaScript code that needs to run <em>as soon as possible</em>, then you could put that code in the <code>&lt;head&gt;</code> and wrap it in a <code>DOMContentLoaded</code> event listener</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded" target="_blank">DOMContentLoaded Event docs on MDN</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Summary</h4>
+                <ul>
+                    <li>Better to have JavaScript that manipulates the DOM be placed at the bottom of the HTML file</li>
+                </ul>
+            </div>
         </div>
     </div>
 
