@@ -1922,6 +1922,67 @@
                     <li>Learn how to measure the speed of your code, how to write efficient and performing code, and about the JavaScript event loop and how it affects the code you write</li>
                 </ul>
             </div>
+
+            <div>
+                <h4>Add Page Content Efficiently</h4>
+                <ul>
+                    <li>The standard way to measure how long it takes code to run is by using <code>performance.now()</code>, it returns a timestamp that is measured in milliseconds, so it's extremely accurate</li>
+                    <ul>
+                        <li>Accurate to five thousandths of a millisecond (5 microseconds)</li>
+                    </ul>
+                    <li>These are the steps to use <code>performance.now()</code> to measure the speed of your code:</li>
+                    <ol>
+                        <li>use <code>performance.now()</code> to get the initial start time for the code</li>
+                        <li>run the code you want to test</li>
+                        <li>execute <code>performance.now()</code> to get another time measurement</li>
+                        <li>subtract the initial time from the final time</li>
+                    </ol>
+                    <li><strong>DocumentFragment</strong> represents a minimal document object that has no parent, it is used as a lightweight version of Document that stores a segment of a document structure comprised of nodes just like a standard document</li>
+                    <ul>
+                        <li>Otherwords, it's like creating another lightweight DOM tree</li>
+                        <li>The key difference is that because the document fragment isn't part of the active document tree structure, changes made to the fragment don't affect the document, cause reflow, or incur any performance impact that can occur when changes are made</li>
+                        <li>Changes made to a DocumentFragment happen off-screen; there's no reflow and repaint cost while you build this!</li>
+                    </ul>
+                    <li>Use the <code>.createDocumentFragment()</code> method to create an empty DocumentFragment object</li>
+                    <li>Use a DocumentFragment to prevent performance issues and to prevent adding unnecessary elements to the DOM</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" target="_blank">performance.now() on MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance" target="_blank">Performance Interface on MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment" target="_blank">DocumentFragment Interface on MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment" target="_blank">createDocumentFragment docs on MDN</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Reflow & Repaint</h4>
+                <ul>
+                    <li><strong>Reflow</strong> is the process of the browser laying out the page</li>
+                    <ul>
+                        <li>It happens when you first display the DOM (generally after the DOM and CSS have been loaded), and happens again every time something could change the layout</li>
+                        <li>This is fairly <em>expensive</em> (slow) process</li>
+                    </ul>
+                    <li><strong>Repaint</strong> happens after reflow as the browser draws the new layout to the screen</li>
+                    <ul>
+                        <li>This is fairly quick, but you still want to limit how often it happens</li>
+                    </ul>
+                    <li>In general, if you have to make a group of changes, hide/change all/show is a great pattern to use if the changes are relatively contained</li>
+                    <li>This is why React and other "virtual DOM" libraries are so popular</li>
+                    <li>Reflow is the process of calculating the dimensions and position of page elements, which is computationally intensive (slow) tasks</li>
+                    <li>Repaint is the process of drawing the pixels to the screen, which is faster than reflow, but is still not a fast process</li>
+                    <li>You want to make sure your code causes the fewest number of reflows as possible!</li>
+                    <li><a href="https://www.udacity.com/course/website-performance-optimization--ud884" target="_blank">Website Performance Optimization</a> course by Udacity</li>
+                    <li><a href="https://developers.google.com/speed/docs/insights/browser-reflow" target="_blank">Minimizing browser reflow</a> from PageSpeed Tools Guides</li>
+                    <li><a href="https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing" target="_blank">Avoid Large, Complex Layouts and Layout Thrashing</a> from Google's Web Fundamentals Guides</li>
+                    <li><a href="https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference#rendering" target="_blank">Performance Analysis Reference</a> from Google's Web Fundamentals Guides</li>
+                    <li><a href="http://www.stubbornella.org/content/2009/03/27/reflows-repaints-css-performance-making-your-javascript-slow/" target="_blank">Article: Reflows & Repaints: CSS Performance Making Your JavaScript Slow?</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>The Call Stack</h4>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
 
