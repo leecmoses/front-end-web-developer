@@ -1980,6 +1980,23 @@
             <div>
                 <h4>The Call Stack</h4>
                 <ul>
+                    <li>JavaScript is single-threaded</li>
+                    <li><strong>Single-threading</strong> is the processing of one command at a time</li>
+                    <li>The opposite of single-threading, is multithreading</li>
+                    <li>The JavaScript engine keeps a call stack (basically a list) of the functions that are running</li>
+                    <ul>
+                        <li>When ia function is invoked, it is added to the list</li>
+                        <li>When all of the code inside a function has been run, then the function is removed from the call stack</li>
+                        <li>The cool part about a call stack is that a function doesn't have to complete before another function is added to the call stack</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Call_stack" target="_blank">Call Stack</a> on MDN</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Call_stack" target="_blank">Call Stack</a> on Wikipedia</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>The Event Loop</h4>
+                <ul>
                     <li></li>
                 </ul>
             </div>
