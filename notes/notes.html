@@ -1980,7 +1980,7 @@
             <div>
                 <h4>The Call Stack</h4>
                 <ul>
-                    <li>JavaScript is single-threaded</li>
+                    <li>JavaScript is single-threaded and is run-to-completion</li>
                     <li><strong>Single-threading</strong> is the processing of one command at a time</li>
                     <li>The opposite of single-threading, is multithreading</li>
                     <li>The JavaScript engine keeps a call stack (basically a list) of the functions that are running</li>
@@ -1988,16 +1988,62 @@
                         <li>When ia function is invoked, it is added to the list</li>
                         <li>When all of the code inside a function has been run, then the function is removed from the call stack</li>
                         <li>The cool part about a call stack is that a function doesn't have to complete before another function is added to the call stack</li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Call_stack" target="_blank">Call Stack</a> on MDN</li>
-                        <li><a href="https://en.wikipedia.org/wiki/Call_stack" target="_blank">Call Stack</a> on Wikipedia</li>
                     </ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Call_stack" target="_blank">Call Stack</a> on MDN</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Call_stack" target="_blank">Call Stack</a> on Wikipedia</li>
                 </ul>
             </div>
 
             <div>
                 <h4>The Event Loop</h4>
                 <ul>
-                    <li></li>
+                    <li><strong>Synchronous</strong> means existing or occurring at the same time</li>
+                    <li>The simplest explanation of JavaScript's <em>concurrency model</em> uses two rules:</li>
+                    <ul>
+                        <li>If some JavaScript is running, let it run until it is finished ("run-to-completion")</li>
+                        <li>If no JavaScript is running, run any pending event handlers</li>
+                    </ul>
+                    <li>There are three parts you have to think about around the event loop:</li>
+                    <ol>
+                        <li>the Call Stack</li>
+                        <li>Web APIs/the browser</li>
+                        <li>an Event Queue</li>
+                    </ol>
+                    <li>Both <code>.addEventListener()</code> and <code>setTimeout()</code> are Web APIs</li>
+                    <li>Asynchronous code makes use of the JavaScript Event Loop</li>
+                    <li>Any asynchronous code (like <code>.addEventListener()</code> and <code>setTimeout()</code>) is handled by the browser</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop" target="_blank">Concurrency Model and Event Loop</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers" target="_blank">Events and Handlers Overview</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ" target="_blank">What the heck is the event loop anyway? by Philip Roberts on YouTube</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>setTimeout</h4>
+                <ul>
+                    <li>The <code>setTimeout()</code> function runs code at a point later in time</li>
+                    <li>It takes a function to run at some later time and the number of milliseconds the code should wait before running the function</li>
+                    <li>Just because the delay is set to <code>0</code> milliseconds does not mean it will run immediately because it still needs to go through the JavaScript Event loop</li>
+                    <ul>
+                        <li>The function is handed off to the browser where the browser starts a timer for 0 milliseconds, since the timer ends immediately, the function will move to the Queue, and then to the Call Stack once the Call Stack has finished executing any currently-running tasks</li>
+                    </ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank">setTimeout docs on MDN</a></li>
+                    <li><a href="https://javascript.info/settimeout-setinterval" target="_blank">Scheduling: setTimeout and setInterval</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Summary</h4>
+                <ul>
+                    <li>Both the code you write and how it performs are vital things to think about while you are developing</li>
+                    <li><a href="https://www.udacity.com/course/browser-rendering-optimization--ud860" target="_blank">Browser Rendering Optimization</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Course Summary</h4>
+                <ul>
+                    <li>Learned what the DOM is and how it's constructed, how to create content with JavaScript, and about browser events and how to respond to them</li>
                 </ul>
             </div>
         </div>
