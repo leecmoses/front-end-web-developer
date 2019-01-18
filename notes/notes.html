@@ -2161,6 +2161,91 @@
                 </ul>
             </div>
         </div>
+
+        <div class="lesson">
+            <h3><span>&gt;</span> Focus</h3>
+            <div>
+                <h4>Introduction to Focus?</h4>
+                <ul>
+                    <li>Web AIM WCAG 2.0 Checklist 2.1.1 - all page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard</li>
+                    <li>Such as freehand drawing cannot be done with a keyboard</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>What is Focus?</h4>
+                <ul>
+                    <li><strong>Focus</strong> determines where <em>keyboard events</em> go in the page</li>
+                    <li><code>TAB</code> will move focus forward</li>
+                    <li><code>SHIFT + TAB</code> will move focus backwards</li>
+                    <li><code>Arrow keys</code> can be used to navigate inside a component</li>
+                    <li>Not all elements are focusable, generally no need to focus something if a user can't interact with it or provide it some sort of input</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Experiencing Focus</h4>
+                <ul>
+                    <li>Use <code>space bar</code> to check/uncheck a box</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>DOM Order Matters</h4>
+                <ul>
+                    <li>The tab order corresponds to the DOM order</li>
+                    <li>Web AIM WCAG 2.0 Checklist 1.3.2 Meaningful Sequence - the reading and navigation order (determined by code order) is logical and intuitive</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Fixing DOM Order</h4>
+                <ul>
+                    <li>Also try to use specific semantics to give elements more precise meaning, this will be covered later on in more detail</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Using Tabindex</h4>
+                <ul>
+                    <li><code>tabindex</code> global attribute indicates if its element can be focused, and if/where it participates in sequential keyboard navigation</li>
+                    <li><code>tabindex="-1"</code></li>
+                    <ul>
+                        <li>Not in the natural tab order</li>
+                        <li>Can be programmatically focused with focus() method</li>
+                    </ul>
+                    <li><code>tabindex="0"</code></li>
+                    <ul>
+                        <li>In the natural tab order</li>
+                        <li>Can be programmatically focused</li>
+                    </ul>
+                    <li><code>tabindex="5"</code></li>
+                    <ul>
+                        <li>In the natural tab order</li>
+                        <li>Jumped to the front of the tab order</li>
+                        <li><strong>Anti-pattern!</strong></li>
+                        <li>If there are multiple elements with a tabindex greater than zero, the order will start from the lowest value that is greater than zero and then work its way up</li>
+                    </ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex" target="_blank">tabindex on MDN</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Deciding whats in focus</h4>
+                <ul>
+                    <li>No need to start adding <code>tabindex</code> to seemingly important elements like headers, for instance, in order to help out the user because this is counter-productive</li>
+                    <li>Normally, you only want to add focus behavior to interactive controls like buttons, tabs, drop downs, or anything that the user might provide input to</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Which Elements Should Have Focus?</h4>
+                <ul>
+                    <li>The following elements should have focus: header links, search input, form elements, call to action button, footer links</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 
 </body>
