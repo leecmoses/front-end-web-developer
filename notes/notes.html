@@ -1653,7 +1653,7 @@
             <div>
                 <h4>Selecting Page Elements With CSS Selectors</h4>
                 <ul>
-                    <li>Being able to select HTML elements is a vital skill when learning ow to access page elements using JavaScript and the DOM!</li>
+                    <li>Being able to select HTML elements is a vital skill when learning how to access page elements using JavaScript and the DOM!</li>
                 </ul>
             </div>
 
@@ -2261,6 +2261,64 @@
 
             <div>
                 <h4>Skip Links</h4>
+                <ul>
+                    <li><strong>Skip link</strong> is an internal link at the beginning of a hypertext document that permits users to skip navigational material and quickly access the document's main content</li>
+                    <li><a href="https://webaim.org/techniques/skipnav/" target="_blank">Read more about skip links</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Focus in Complex Components</h4>
+                <ul>
+                    <li>The ARIA Authoring Practices doc (or "ARIA Design Patterns doc") is a great resource for figuring out what kind of keyboard support your complex components should implement</li>
+                    <li><a href="https://www.w3.org/TR/wai-aria-practices/" target="_blank">WAI-ARIA Authoring Practices</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Keyboard Design Patterns</h4>
+                <ul>
+                    <li><em>Roving tabindex</em>, also known as "roving focus", is a technique to maintain focus state</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Implementing Keyboard Event Listeners</h4>
+                <ul>
+                    <li>Maintain focus state by changing <code>tabindex</code> using values of "0" for currently focused "-1" for not currently focused</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Offscreen Content</h4>
+                <ul>
+                    <li>Use <code>document.activeElement</code> to find your missing focus</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/activeElement" target="_blank">Read more about Document.activeElement on MDN</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Quiz: Implementing Offscreen Content</h4>
+                <ul>
+                    <li>To remove an element from the tab order you can use <code>display: none;</code> in CSS, and then, change the display when you need the element to appear</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Modals and Keyboard Traps</h4>
+                <ul>
+                    <li>2.1.2 No Keyboard Trap - Keyboard focus is never locked or trapped at one particular page element, the user can navigate to and from all navigable page elements using only a keyboard</li>
+                    <li><strong>BUT...</strong> you may want a keyboard trap when you have a modal, specifically a temporary keyboard trap</li>
+                    <li>The <code>&lt;dialog&gt;</code> tag defines a dialog box or window</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">More on dialog on MDN</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson 2 Outro</h4>
+                <ul>
+                    <li>Now start implementing these different techniques into your web development</li>
+                </ul>
             </div>
 
         </div>
