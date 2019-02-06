@@ -2584,6 +2584,145 @@
                     <li><a href="https://www.w3.org/TR/wai-aria-1.1/" target="_blank">ARIA spec</a></li>
                 </ul>
             </div>
+
+            <div>
+                <h4>First Steps with ARIA</h4>
+                <ul>
+                    <li>Use JavaScript to keep ARIA attributes and values in sync</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>What can ARIA do for you?</h4>
+                <ul>
+                    <li>ARIA can add semantics to an element where no native semantics exist</li>
+                    <li>ARIA can also modify existing element semantics within certain bounds</li>
+                    <li>ARIA can express the semantic UI patterns which don't exist in HTML</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Roleplaying</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/wai-aria-1.0/#roles" target="_blank">ARIA 1.0 roles</a></li>
+                    <li><a href="https://www.w3.org/TR/wai-aria-1.0/#roles" target="_blank">ARIA 1.1 roles (draft)</a></li>
+                    <li><a href="https://www.w3.org/TR/wai-aria-1.0/#roles" target="_blank">ARIA 1.1. practices guide (draft)</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Custom Radio Button Group with ARIA</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#radiobutton" target="_blank">ARIA Practices 1.1 recommendations for the "radio group" pattern</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>More Ways to Label</h4>
+                <ul>
+                    <li>ARIA provides several mechnaisms for adding labels and descriptions to elements:</li>
+                    <ul>
+                        <li>aria-label</li>
+                        <li>aria-labelledby</li>
+                        <li>aria-describedby</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Name That Element!</h4>
+                <ul>
+                    <li>Completed exercise</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Breather</h4>
+                <ul>
+                    <li>Next learn how ARIA semantics interact with native HTML semantics</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Default Semantics and Landmarks</h4>
+                <ul>
+                    <li>Don't redefine default semantics</li>
+                    <li>Some semantics can't be overridden</li>
+                    <li><a href="https://www.w3.org/TR/html-aria/" target="_blank">ARIA in HTML spec</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>ARIA Relationships</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/wai-aria-1.1/#attrs_relationships" target="_blank">ARIA relationship attributes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Combo Box</h4>
+                <ul>
+                    <li><code>aria-setsize</code> may apply to elements with a role of <code>option</code> or <code>listitem</code></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Hidden In Plain Sight</h4>
+                <ul>
+                    <li><code>style="visibility: hidden"</code>, <code>style="display: none;"</code>, and <code>hidden</code> will all be hidden from assistive technology users</li>
+                    <li><a href="https://webaim.org/techniques/css/invisiblecontent/" target="_blank">WebAIM's article on "invisible content"</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Name That Element Round 2</h4>
+                <ul>
+                    <li><code>aria-hidden</code> needs an explicit value of either true or false</li>
+                    <li><code>aria-labelledby</code> can refer to elements that are hidden</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Recap so far</h4>
+                <ul>
+                    <li>Learn to convey time-sensitive information and deeper look at exactly what it means to add an ARIA role to an element</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Introducing ARIA Live</h4>
+                <ul>
+                    <li><code>aria-live</code> has three possible values: off (default), polite, assertive</li>
+                    <li><code>aria-live="off"</code> updates to the region will not be presented to the user unless the assistive technology is currently focused on that region</li>
+                    <li><code>aria-live="polite"</code> (background change) assistive technologies <strong>should</strong> announce updates at the next graceful opportunity, such as at the end of speaking the current sentence or when the user pauses typing</li>
+                    <li><code>aria-live="assertive"</code> this information has the highest priority and assistive technologies <strong>should</strong> notify the user immediately, and because an interruption may disorient users or cause them to not complete their current task, authors <strong>should not</strong> use the assertive value unless the interruption is imperative</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Atomic Relevant Busy</h4>
+                <ul>
+                    <li>There are three attributes which work with <code>aria-live</code> to fine tune what is communicated tot he user when the live region changes</li>
+                    <li><code>aria-atomic</code> indicates whether the entire region should be considered as a whole when communicating updates</li>
+                    <ul>
+                        <li>Has to possible values of either false (default) or true</li>
+                        <li>false - a change within the region may be processed by the assistive technologies on its own</li>
+                        <li>true - assistive technologies will present the entire region as a whole</li>
+                    </ul>
+                    <li><code>aria-relevant</code> indicates what types of changes should be presented to the user</li>
+                    <ul>
+                        <li>additions text (default), rarely has to be changed from the default value</li>
+                        <li>Other values include: additions, removals, text, all</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Recap</h4>
+                <ul>
+                    <li>ARIA allows you to intervene and do some tree surgery before the a11y tree is exposed to the assistive technology</li>
+                </ul>
+            </div>
         </div>
 
     </div>
