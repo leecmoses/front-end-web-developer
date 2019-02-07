@@ -2849,6 +2849,60 @@
 
     </div>
 
+    <div class="unit">
+        <h2 id="object"><span>#</span> Object-Oriented Javascript</h2>
+
+        <div class="lesson">
+            <h3><span>&gt</span> Objects in Depth</h3>
+            <div>
+                <h4>Introduction</h4>
+                <ul>
+                    <li>In JS, an <strong>object</strong> is an unordered collection of properties and each property consists of a key/value pair, and can reference either a primitive or another object</li>
+                    <li>Note that while dot notation may be easier to read and write, it can't be used in every situation (e.g., for example a key in an object that is a <em>number</em></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Create and Modify Properties</h4>
+                <ul>
+                    <li>Objects are commonly created with <strong>literal notation</strong>, and can include properties that point to functions called <strong>methods</strong></li>
+                    <li>With a few exceptions, properties in objects are <em>mutable</em></li>
+                    <li>Removing properties with the <code>delete</code> operator returns <code>true</code> upon successful deletion</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Invoking Object Methods</h4>
+                <ul>
+                    <li>A <strong>method</strong> is a function property of an object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Beware of Globals</h4>
+                <ul>
+                    <li>The <code>window</code> object is provided by the browser and is not part of the JS language or specification</li>
+                    <li>Only declaring variables with the <code>var</code> keyword will add them to the <code>window</code> object</li>
+                    <li>If you declare a variable <em>outside of a function</em> with either <code>let</code> or <code>const</code>, it will <em>not</em> be added as a property to the <code>window</code> object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Extracting Properties and Values</h4>
+                <ul>
+                    <li><code>Object.keys()</code> returns an array of the provided object's property names as strings and in the same order as they would be when using a <code>for</code> loop</li>
+                    <li><code>Object.values()</code> returns a list of the <em>values</em> of an object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Summary</h4>
+                <ul>
+                    <li><a href="http://crockford.com/javascript/" target="_blank">JavaScript: The Good Parts</a> by Douglas Crockford</li>
+                </ul>
+            </div>
+    </div>
+
 </body>
 
 </html>
