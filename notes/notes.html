@@ -3315,7 +3315,37 @@
             </div>
 
             <div>
-                <h4>Classes and Objects</h4>
+                <h4>Constructor Functions</h4>
+                <ul>
+                    <li>A <strong>constructor function</strong> doesn't directly return anything (i.e., there's no explicit <code>return</code> statement), but invoking them with the <code>new</code> operator constructs a new object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>The `this` Keyword</h4>
+                <ul>
+                    <li>Functions, objects, and <code>this</code> are all interconnected</li>
+                    <li>When invoking constructor functions with the <code>new</code> operator, a <code>this</code> variable is set tot he newly-created object</li>
+                    <li>When invoking a method on an object, <code>this</code> is set to the object itself</li>
+                    <li>When invoking a function in a browser environment, <code>this</code> is set to the <code>window</code></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Setting Our Own `this`</h4>
+                <ul>
+                    <li><code>call()</code> invokes the function and has arguments passed in individually, seperated by commas</li>
+                    <li><code>apply()</code> is similar to <code>call()</code>; it invokes the function just the same, but arguments are passed in as an array</li>
+                    <li><code>bind()</code> returns a new function with <code>this</code> bound to a specific object, allowing us to call it as a regular function</li>
+                    <li>Kyle Simpson's <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes" target="_blank">You Don't Know JS</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Prototypal Inheritance</h4>
+                <ul>
+                    <li></li>
+                </ul>
             </div>
 
         </div>
