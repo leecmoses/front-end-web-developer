@@ -3344,7 +3344,40 @@
             <div>
                 <h4>Prototypal Inheritance</h4>
                 <ul>
-                    <li></li>
+                    <li>Inheritance in JS is when an object is based on <em>another</em> object, it allows us to reuse existing code, having objects take on properties of other objects</li>
+                    <li><code>hasOwnProperty()</code> allows you to find the origin of a particular property</li>
+                    <ul>
+                        <li>Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was <em>not</em> inherited</li>
+                    </ul>
+                    <li><code>isPrototypeOf()</code> checks whether or not an object exists in another object's prototype chain</li>
+                    <ul>
+                        <li>Works well, but keep in mind that in order to use it, you must <em>have</em> that prototype object at hand in the first place</li>
+                    </ul>
+                    <li><code>Object.getPrototypeOf()</code> is great for retrieving the prototype of a given object</li>
+                    <li>Each time an object is created, a special property is assigned to it under the hood: <code>constructor</code></li>
+                    <ul>
+                        <li>Accessing an object's <code>constructor</code> property returns a reference to the constructor function that created that object in the first place</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Prototypal Inheritance: Subclasses</h4>
+                <ul>
+                    <li>Inheritance in JS is all about setting up the prototype chain, this allows us to <strong>subclass</strong>, that is, create a "child" object that inherits most or all of a "parents" object's properties and methods</li>
+                    <li>We can then implement any of the child object's unique properties and methods separately, while still retaining data and functionality from its parent</li>
+                    <li>You should never use the <code>__proto__</code> property in any code you write because it may lead to some unwanted side effects</li>
+                    <li><code>Object.create()</code> allows us to efficiently manage inheritance by not mutating the prototype completely</li>
+                    <ul>
+                        <li>It takes in a parent object and returns a <em>new</em> object with its <code>__proto__</code> property set to the parent object</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Lesson Summary</h4>
+                <ul>
+                    <li>Add functionality to objects by adding methods to the object's prototype and implement prototypal inheritance to extend objects</li>
                 </ul>
             </div>
 
