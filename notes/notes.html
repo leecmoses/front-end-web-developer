@@ -3310,14 +3310,17 @@
                         <li>Value of properties as <em>adjectives</em></li>
                         <li>Methods as <em>verbs</em></li>
                     </ul>
-                    <li>JS does not have a traditional class system, instead, the class system is built directly using functions and objects</li>
+                    <li>JS does not have a traditional class system, instead, the class system is built directly using
+                        functions and objects</li>
                 </ul>
             </div>
 
             <div>
                 <h4>Constructor Functions</h4>
                 <ul>
-                    <li>A <strong>constructor function</strong> doesn't directly return anything (i.e., there's no explicit <code>return</code> statement), but invoking them with the <code>new</code> operator constructs a new object</li>
+                    <li>A <strong>constructor function</strong> doesn't directly return anything (i.e., there's no
+                        explicit <code>return</code> statement), but invoking them with the <code>new</code> operator
+                        constructs a new object</li>
                 </ul>
             </div>
 
@@ -3325,38 +3328,53 @@
                 <h4>The `this` Keyword</h4>
                 <ul>
                     <li>Functions, objects, and <code>this</code> are all interconnected</li>
-                    <li>When invoking constructor functions with the <code>new</code> operator, a <code>this</code> variable is set tot he newly-created object</li>
+                    <li>When invoking constructor functions with the <code>new</code> operator, a <code>this</code>
+                        variable is set tot he newly-created object</li>
                     <li>When invoking a method on an object, <code>this</code> is set to the object itself</li>
-                    <li>When invoking a function in a browser environment, <code>this</code> is set to the <code>window</code></li>
+                    <li>When invoking a function in a browser environment, <code>this</code> is set to the
+                        <code>window</code></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Setting Our Own `this`</h4>
                 <ul>
-                    <li><code>call()</code> invokes the function and has arguments passed in individually, seperated by commas</li>
-                    <li><code>apply()</code> is similar to <code>call()</code>; it invokes the function just the same, but arguments are passed in as an array</li>
-                    <li><code>bind()</code> returns a new function with <code>this</code> bound to a specific object, allowing us to call it as a regular function</li>
-                    <li>Kyle Simpson's <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes" target="_blank">You Don't Know JS</a></li>
+                    <li><code>call()</code> invokes the function and has arguments passed in individually, seperated by
+                        commas</li>
+                    <li><code>apply()</code> is similar to <code>call()</code>; it invokes the function just the same,
+                        but arguments are passed in as an array</li>
+                    <li><code>bind()</code> returns a new function with <code>this</code> bound to a specific object,
+                        allowing us to call it as a regular function</li>
+                    <li>Kyle Simpson's <a
+                            href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes"
+                            target="_blank">You Don't Know JS</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Prototypal Inheritance</h4>
                 <ul>
-                    <li>Inheritance in JS is when an object is based on <em>another</em> object, it allows us to reuse existing code, having objects take on properties of other objects</li>
+                    <li>Inheritance in JS is when an object is based on <em>another</em> object, it allows us to reuse
+                        existing code, having objects take on properties of other objects</li>
                     <li><code>hasOwnProperty()</code> allows you to find the origin of a particular property</li>
                     <ul>
-                        <li>Upon passing in a string of the property name you're looking for, the method will return a boolean indicating whether or not the property belongs to the object itself (i.e., that property was <em>not</em> inherited</li>
+                        <li>Upon passing in a string of the property name you're looking for, the method will return a
+                            boolean indicating whether or not the property belongs to the object itself (i.e., that
+                            property was <em>not</em> inherited</li>
                     </ul>
-                    <li><code>isPrototypeOf()</code> checks whether or not an object exists in another object's prototype chain</li>
+                    <li><code>isPrototypeOf()</code> checks whether or not an object exists in another object's
+                        prototype chain</li>
                     <ul>
-                        <li>Works well, but keep in mind that in order to use it, you must <em>have</em> that prototype object at hand in the first place</li>
+                        <li>Works well, but keep in mind that in order to use it, you must <em>have</em> that prototype
+                            object at hand in the first place</li>
                     </ul>
-                    <li><code>Object.getPrototypeOf()</code> is great for retrieving the prototype of a given object</li>
-                    <li>Each time an object is created, a special property is assigned to it under the hood: <code>constructor</code></li>
+                    <li><code>Object.getPrototypeOf()</code> is great for retrieving the prototype of a given object
+                    </li>
+                    <li>Each time an object is created, a special property is assigned to it under the hood:
+                        <code>constructor</code></li>
                     <ul>
-                        <li>Accessing an object's <code>constructor</code> property returns a reference to the constructor function that created that object in the first place</li>
+                        <li>Accessing an object's <code>constructor</code> property returns a reference to the
+                            constructor function that created that object in the first place</li>
                     </ul>
                 </ul>
             </div>
@@ -3364,12 +3382,18 @@
             <div>
                 <h4>Prototypal Inheritance: Subclasses</h4>
                 <ul>
-                    <li>Inheritance in JS is all about setting up the prototype chain, this allows us to <strong>subclass</strong>, that is, create a "child" object that inherits most or all of a "parents" object's properties and methods</li>
-                    <li>We can then implement any of the child object's unique properties and methods separately, while still retaining data and functionality from its parent</li>
-                    <li>You should never use the <code>__proto__</code> property in any code you write because it may lead to some unwanted side effects</li>
-                    <li><code>Object.create()</code> allows us to efficiently manage inheritance by not mutating the prototype completely</li>
+                    <li>Inheritance in JS is all about setting up the prototype chain, this allows us to
+                        <strong>subclass</strong>, that is, create a "child" object that inherits most or all of a
+                        "parents" object's properties and methods</li>
+                    <li>We can then implement any of the child object's unique properties and methods separately, while
+                        still retaining data and functionality from its parent</li>
+                    <li>You should never use the <code>__proto__</code> property in any code you write because it may
+                        lead to some unwanted side effects</li>
+                    <li><code>Object.create()</code> allows us to efficiently manage inheritance by not mutating the
+                        prototype completely</li>
                     <ul>
-                        <li>It takes in a parent object and returns a <em>new</em> object with its <code>__proto__</code> property set to the parent object</li>
+                        <li>It takes in a parent object and returns a <em>new</em> object with its
+                            <code>__proto__</code> property set to the parent object</li>
                     </ul>
                 </ul>
             </div>
@@ -3377,7 +3401,35 @@
             <div>
                 <h4>Lesson Summary</h4>
                 <ul>
-                    <li>Add functionality to objects by adding methods to the object's prototype and implement prototypal inheritance to extend objects</li>
+                    <li>Add functionality to objects by adding methods to the object's prototype and implement
+                        prototypal inheritance to extend objects</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="lesson">
+            <h3><span>&gt;</span> Object-Oriented Design Patterns</h3>
+            <div>
+                <h4>Introduction</h4>
+                <ul>
+                    <li>Mixins, module pattern, and revealing module pattern</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Mixins / Extending Object Functionality with Mixins</h4>
+                <ul>
+                    <li>A <strong>mixin</strong> is a technique that takes the properties and methods from one object and copies them over to another object, in other words: it is a technique that provides some useful functionality, but is not meant to be added to the prototype chain</li>
+                    <li><code>Object.assign()</code> is a great way to copy properties own properties into a given object</li>
+                    <li>Though mixins don't set up the prototype chain, they are an ideal way to extend data and functionality from multiple source objects</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Functional Mixins</h4>
+                <ul>
+                    <li></li>
                 </ul>
             </div>
 
