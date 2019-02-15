@@ -3420,17 +3420,41 @@
             <div>
                 <h4>Mixins / Extending Object Functionality with Mixins</h4>
                 <ul>
-                    <li>A <strong>mixin</strong> is a technique that takes the properties and methods from one object and copies them over to another object, in other words: it is a technique that provides some useful functionality, but is not meant to be added to the prototype chain</li>
-                    <li><code>Object.assign()</code> is a great way to copy properties own properties into a given object</li>
-                    <li>Though mixins don't set up the prototype chain, they are an ideal way to extend data and functionality from multiple source objects</li>
+                    <li>A <strong>mixin</strong> is a technique that takes the properties and methods from one object
+                        and copies them over to another object, in other words: it is a technique that provides some
+                        useful functionality, but is not meant to be added to the prototype chain</li>
+                    <li><code>Object.assign()</code> is a great way to copy properties own properties into a given
+                        object</li>
+                    <li>Though mixins don't set up the prototype chain, they are an ideal way to extend data and
+                        functionality from multiple source objects</li>
                 </ul>
             </div>
 
             <div>
                 <h4>Functional Mixins</h4>
                 <ul>
-                    <li>A factory function is a function that returns an objec, but isn't itself a class or constructor</li>
-                    <li>Just like a constructor function, a factory function can be called multiple times to create an object</li>
+                    <li>A factory function is a function that returns an objec, but isn't itself a class or constructor
+                    </li>
+                    <li>Just like a constructor function, a factory function can be called multiple times to create an
+                        object</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>The Module Pattern</h4>
+                <ul>
+                    <li>The Module Pattern leverages many of the powerful features of JavaScript, such as scope,
+                        closures, and IIFE</li>
+                    <ul>
+                        <li>See Lesson 2: Functions at Runtime for review if needed</li>
+                    </ul>
+                    <li>Since JavaScript doesn't have private variables, properties, or methods built-in, we can
+                        leverage the Module Pattern to enforce such privacy</li>
+                    <li>Addy Osmani's <a
+                            href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript"
+                            target="_blank">The Module Pattern</a></li>
+                    <li>Todd Motto's <a href="https://toddmotto.com/mastering-the-module-pattern/#private-methods"
+                            target="_blank">Mastering the Module Pattern</a></li>
                 </ul>
             </div>
 
